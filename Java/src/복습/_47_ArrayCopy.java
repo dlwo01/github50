@@ -1,0 +1,22 @@
+package 복습;
+
+public class _47_ArrayCopy {
+	public static void main(String[] args) {
+		
+		
+		int[] array1 = {10,20,30,40,50};
+		int[] array2 = {1,2,3,4,5};
+		
+		//system.arraycopy(복사할 배열, 복사할 첫 위치, 대상 배열, 붙여넣을 첫 위치, 복사할 요소 갯수);
+		System.arraycopy(array1,0,array2,1,4);
+		
+		for(int i = 0; i < array2.length; i++) {
+			System.out.print(array2[i] + " ");
+		}
+		
+	}
+
+}
+/*
+1 10 20 30 40 
+*/
